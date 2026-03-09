@@ -102,12 +102,12 @@
   .edu-date { color: #888888; font-size: .8rem; }
 
   /* PERSONAL */
-  .personal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
-  .personal-card {
-    background: var(--card); border: 1px solid var(--border); border-radius: 8px; padding: 1.25rem;
+  .car-photos { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+  .car-photos img {
+    width: 100%; height: 320px; object-fit: cover;
+    border-radius: 8px; border: 1px solid var(--border);
+    display: block;
   }
-  .personal-card h3 { color: var(--accent); margin-bottom: .5rem; font-size: .75rem; text-transform: uppercase; letter-spacing: .08em; }
-  .personal-card p { color: var(--muted); font-size: .875rem; }
 
   /* RESUME FAB */
   .resume-fab {
@@ -125,7 +125,7 @@
   footer { text-align: center; padding: 1.5rem; color: #aaaaaa; font-size: .8rem; border-top: 1px solid var(--border); }
 
   @media (max-width: 640px) {
-    .about-grid, .edu-grid, .personal-grid { grid-template-columns: 1fr; }
+    .about-grid, .edu-grid, .car-photos { grid-template-columns: 1fr; }
     nav { padding: .85rem 1.25rem; }
     .hero-contact-divider { display: none; }
     .hero-contact { gap: .75rem; flex-direction: column; }
@@ -307,23 +307,9 @@
 <section id="personal">
   <div class="section-label">Personal</div>
   <h2>Outside of Work</h2>
-  <div class="personal-grid">
-    <div class="personal-card">
-      <h3>Cars</h3>
-      <p>Outside of IT, a big part of my life is cars. I daily drive a 2016 Mazda MX-5 Miata — one of the purest driving experiences you can have. There's something about a lightweight, rear-wheel drive roadster that just makes every commute worth it.</p>
-    </div>
-    <div class="personal-card">
-      <h3>The Enthusiast Mindset</h3>
-      <p>I appreciate cars the same way I approach technology — understanding how things work, why they were designed a certain way, and how to get the most out of them. Whether it's tuning a script or enjoying a canyon road, the details matter.</p>
-    </div>
-    <div class="personal-card">
-      <h3>Southern California</h3>
-      <p>Living in Irvine puts me close to some great driving roads. When I'm not at a keyboard, I'm usually out enjoying them — or reading up on the next modification I probably don't need.</p>
-    </div>
-    <div class="personal-card">
-      <h3>Always Learning</h3>
-      <p>I enjoy staying sharp both in and out of the office. Whether it's a new certification, a home lab project, or figuring out what's wrong with someone else's car at a cars and coffee meet.</p>
-    </div>
+  <div class="car-photos">
+    <img src="pic1.jpg" alt="2016 Mazda MX-5 Miata">
+    <img src="pic2.jpg" alt="2016 Mazda MX-5 Miata">
   </div>
 </section>
 
